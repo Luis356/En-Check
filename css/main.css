@@ -7,3 +7,8 @@
   font-family: "Poppins", sans-serif;
   /*  Importanto e definindo a fonte para todo o site   */
 }
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}

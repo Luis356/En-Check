@@ -4,8 +4,9 @@ const email = document.getElementById("email");
 const senha = document.getElementById("senha");
 const confirmasenha = document.getElementById("c-senha");
 const ra = document.getElementById("ra");
+const cep = document.getElementById("cep");
 
-form.addEventListener("submit", (e) => {
+form.addEventListener("blur", (e) => {
   e.preventDefault();
   checkInputs();
 });
@@ -16,6 +17,7 @@ function checkInputs() {
   const valorSenha = senha.value;
   const valorConfirmaSenha = confirmasenha.value;
   const valorRa = ra.value;
+  const valorCep = cep.vaulue;
 
   //NOME
 
@@ -55,7 +57,7 @@ function checkInputs() {
     setSuccessFor(confirmasenha);
   }
 
-  //Ra
+  //RA
 
   if (valorRa.toString().length == 11) {
     setSuccessFor(ra);
@@ -63,6 +65,12 @@ function checkInputs() {
     setErrorFor(ra, "Digite um R.A valido.");
   }
 }
+
+//CEP
+
+if (valorCep) {
+}
+
 function setErrorFor(input, mensagem) {
   const formControl = input.parentElement;
   const small = formControl.querySelector("small");

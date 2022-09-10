@@ -1,40 +1,56 @@
 body {
+  margin: 0;
   background: linear-gradient(0deg, #2f1d3c 1%, #000000 50%);
+  width: 100vw;
   height: 100vh;
 }
 
 .container-cadastro {
-  width: 100vw;
+  background-color: white;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  margin-top: 25vh;
+  background-color: transparent;
 }
-
 .container-esquerda {
-  color: white;
   width: 50vw;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
+
+.logo-cadastro {
+  height: 250px;
+  width: 250px;
+}
+
+.texto-logo {
+  color: white;
+  text-align: center;
+}
+/*
 .container-direita {
   width: 50vw;
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-.conteudo-direita {
-  width: 50%;
-  display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
-  padding: 30px 35px;
+}*/
+.container-direita {
   background-color: #1c1c1c;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  margin: 15px 0px;
+  width: 400px;
+  max-width: 100%;
+  overflow: hidden;
+  color: white;
+  margin: 25px;
+}
+.header {
+  color: white;
+  margin-bottom: 10px;
 }
 
 input::-webkit-outer-spin-button,
@@ -44,99 +60,4 @@ input::-webkit-inner-spin-button {
   /*
       Remove as "setas" do input number, nos navegadores: Chrome, Safari, Edge, Opera.
      */
-}
-
-.header {
-  background-color: #1c1c1c;
-  align-items: center;
-}
-
-.form {
-  padding: 20px 0px;
-}
-
-.form-control {
-  margin-bottom: 5px;
-  padding-bottom: 20px;
-  position: relative;
-  /*
-    Estilizando espaço do formulario
-    */
-}
-
-.form-control label {
-  display: inline;
-  margin-bottom: 5px;
-  /*
-  Estilizando os labels
-  */
-}
-
-.form-control input {
-  border: 2px solid #f0f0f0;
-  display: block;
-  border-radius: 10px;
-  font-size: 14px;
-  width: 100%;
-  padding: 10px;
-  /*
-    EStilizando os inputs
-    */
-}
-
-.form-control i {
-  position: absolute;
-  top: 40px;
-  right: 10px;
-  visibility: hidden;
-  /*
-    Estilizando os icones de avisos
-    */
-}
-
-.form-control small {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  visibility: hidden;
-  /*
-    Estilizando a mensagem de erro dos inputs
-    */
-}
-
-.form button {
-  background-color: #fc00ff;
-  border: 2px solide #fc00ff;
-  color: #fff;
-  font-size: 14px;
-  width: 100%;
-  border-radius: 10px;
-  padding: 10px;
-  /*
-    Estilizando o Botão
-    */
-}
-
-/*Erros - sucesso*/
-.form-control.success input {
-  border-color: #2ecc01;
-}
-
-.form-control.error input {
-  border-color: #e74c3c;
-}
-
-.form-control.success i.fa-check-circle {
-  color: #2ecc01;
-  visibility: visible;
-}
-
-.form-control.error i.fa-exclamation-circle {
-  color: #e74c3c;
-  visibility: visible;
-}
-
-.form-control.error small {
-  visibility: visible;
-  color: #e74c3c;
 }
