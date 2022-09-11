@@ -1,14 +1,14 @@
-const form = document.getElementById("form");
+const form = document.getElementById("formulario");
 const nome = document.getElementById("nome");
 const email = document.getElementById("email");
 const senha = document.getElementById("senha");
-const confirmasenha = document.getElementById("c-senha");
-const ra = document.getElementById("ra");
+const confirmasenha = document.getElementById("c_senha");
 const cep = document.getElementById("cep");
 
-form.addEventListener("blur", (e) => {
+form.addEventListener("submit", (e) => {
   e.preventDefault();
   checkInputs();
+  //window.location = "cad.php";
 });
 
 function checkInputs() {
@@ -16,13 +16,13 @@ function checkInputs() {
   const valorEmail = email.value;
   const valorSenha = senha.value;
   const valorConfirmaSenha = confirmasenha.value;
-  const valorRa = ra.value;
-  const valorCep = cep.vaulue;
+  //const valorCep = cep.value;
 
   //NOME
 
   if (valorNome === "") {
     setErrorFor(nome, "O nome completo é obrigatório.");
+    return false;
   } else {
     setSuccessFor(nome);
   }
@@ -56,25 +56,11 @@ function checkInputs() {
   } else {
     setSuccessFor(confirmasenha);
   }
-
-  //RA
-
-  if (valorRa.toString().length == 11) {
-    setSuccessFor(ra);
-  } else {
-    setErrorFor(ra, "Digite um R.A valido.");
-  }
-}
-
-//CEP
-
-if (valorCep) {
 }
 
 function setErrorFor(input, mensagem) {
   const formControl = input.parentElement;
   const small = formControl.querySelector("small");
-
   //adicionando a mensagem
   small.innerText = mensagem;
   formControl.className = "form-control error";

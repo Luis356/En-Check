@@ -35,14 +35,14 @@
       <div class="container-direita">
         <div class="container-direita-formulario">
           <div class="header"><h1>Crie sua conta</h1></div>
-          <form action="cad.php" method="post" class="formulario">
+          <form method="post" id="formulario">
             <div class="form-control">
               <label for="nome">Nome</label>
               <input
                 type="text"
                 name="nome"
                 id="nome"
-                placeholder="Digite Seu Nome Completo"
+                placeholder="Digite seu nome completo"
               />
             </div>
 
@@ -52,7 +52,7 @@
                 type="email"
                 name="email"
                 id="email"
-                placeholder="Digite Seu Email"
+                placeholder="Digite seu email"
               />
             </div>
 
@@ -62,7 +62,17 @@
                 type="password"
                 name="senha"
                 id="senha"
-                placeholder="Digite Sua Senha"
+                placeholder="Digite sua senha"
+              />
+            </div>
+
+            <div class="form-control">
+              <label for="c_senha">Confirmar senha</label>
+              <input
+                type="password"
+                name="c_senha"
+                id="c_senha"
+                placeholder="Digite sua senha novamente"
               />
             </div>
 
@@ -72,7 +82,7 @@
                 type="number"
                 name="cep"
                 id="cep"
-                placeholder="Digite Seu CEP"
+                placeholder="Digite seu CEP"
               />
             </div>
 
@@ -81,5 +91,10 @@
         </div>
       </div>
     </div>
+    <script
+      src="https://kit.fontawesome.com/e9c9cc9f51.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/script2.js"></script>
   </body>
 </html>
