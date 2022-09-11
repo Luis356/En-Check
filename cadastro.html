@@ -35,7 +35,12 @@
       <div class="container-direita">
         <div class="container-direita-formulario">
           <div class="header"><h1>Crie sua conta</h1></div>
-          <form method="post" id="formulario">
+          <form
+            method="get"
+            id="formulario"
+            class="formulario"
+            action="cad.php"
+          >
             <div class="form-control">
               <label for="nome">Nome</label>
               <input
@@ -43,7 +48,14 @@
                 name="nome"
                 id="nome"
                 placeholder="Digite seu nome completo"
+                onblur="validaNome(this)"
               />
+              <i>
+                <img class="img-success" src="./imagens/success-icon.svg" />
+              </i>
+              <i
+                ><img class="img-error" src="./imagens/error-icon.svg" alt=""
+              /></i>
             </div>
 
             <div class="form-control">
@@ -53,7 +65,17 @@
                 name="email"
                 id="email"
                 placeholder="Digite seu email"
+                onblur="validaEmail(this)"
               />
+              <i
+                ><img
+                  class="img-success"
+                  src="./imagens/success-icon.svg"
+                  alt=""
+              /></i>
+              <i
+                ><img class="img-error" src="./imagens/error-icon.svg" alt=""
+              /></i>
             </div>
 
             <div class="form-control">
@@ -63,17 +85,37 @@
                 name="senha"
                 id="senha"
                 placeholder="Digite sua senha"
+                onblur="validaSenha(this)"
               />
+              <i
+                ><img
+                  class="img-success"
+                  src="./imagens/success-icon.svg"
+                  alt=""
+              /></i>
+              <i
+                ><img class="img-error" src="./imagens/error-icon.svg" alt=""
+              /></i>
             </div>
 
             <div class="form-control">
-              <label for="c_senha">Confirmar senha</label>
+              <label for="csenha">Confirma senha</label>
               <input
                 type="password"
-                name="c_senha"
-                id="c_senha"
-                placeholder="Digite sua senha novamente"
+                name="csenha"
+                id="csenha"
+                placeholder="Digite sua senha"
+                onblur="confirmaSenha(this)"
               />
+              <i
+                ><img
+                  class="img-success"
+                  src="./imagens/success-icon.svg"
+                  alt=""
+              /></i>
+              <i
+                ><img class="img-error" src="./imagens/error-icon.svg" alt=""
+              /></i>
             </div>
 
             <div class="form-control">
@@ -83,18 +125,24 @@
                 name="cep"
                 id="cep"
                 placeholder="Digite seu CEP"
+                maxlength="8"
               />
+              <i
+                ><img
+                  class="img-success"
+                  src="./imagens/success-icon.svg"
+                  alt=""
+              /></i>
+              <i
+                ><img class="img-error" src="./imagens/error-icon.svg" alt=""
+              /></i>
             </div>
 
-            <button>Cadastrar</button>
+            <button type="submit">Cadastrar</button>
           </form>
         </div>
       </div>
     </div>
-    <script
-      src="https://kit.fontawesome.com/e9c9cc9f51.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./scripts/script2.js"></script>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>

@@ -1,3 +1,6 @@
+<?php
+include_once("validarestrito.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,3 +13,4 @@
     <a href="inicial.html">Voltar</a>
   </body>
 </html>
+

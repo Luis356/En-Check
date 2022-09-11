@@ -9,7 +9,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 5vh;
+  margin-top: 7vh;
 }
 
 /*  ESQUERDA  */
@@ -27,11 +27,6 @@ body {
   width: 300px;
   filter: drop-shadow(4px 4px 7px white);
   margin-bottom: 15px;
-}
-
-.texto-logo {
-  color: white;
-  text-align: center;
 }
 
 /*  DIREITA   */
@@ -60,7 +55,7 @@ body {
   padding: 10px 20px;
 }
 
-#formulario {
+.formulario {
   padding: 10px 20px;
 }
 
@@ -84,7 +79,7 @@ body {
   padding: 5px;
 }
 
-#formulario button {
+.formulario button {
   background-color: #fc00ff;
   border: 2px solid #000000;
   color: #fff;
@@ -104,45 +99,30 @@ input::-webkit-inner-spin-button {
     Remove as "setas" do input number, nos navegadores: Chrome, Safari, Edge, Opera.
     */
 }
-
-.form-control i {
-  position: absolute;
-  top: 35px;
-  right: 10px;
-  visibility: hidden;
-  /*
-  Estilizando os icones de avisos
-  */
-}
-
-.form-control small {
-  position: absolute;
-  visibility: hidden;
-  /*
-  Estilizando a mensagem de erro dos inputs
-  */
-}
-
-/*Erros - sucesso*/
 .form-control.success input {
-  border-color: #2ecc01;
+  border: 3px solid #4eca64;
 }
 
 .form-control.error input {
-  border-color: #e74c3c;
+  border: 3px solid #db5a5a;
 }
 
-.form-control.success i.fa-check-circle {
-  color: #2ecc01;
+.form-control.error i .img-error {
   visibility: visible;
 }
 
-.form-control.error i.fa-exclamation-circle {
-  color: #e74c3c;
+.form-control.success i .img-success {
   visibility: visible;
 }
 
 .form-control.error small {
+  color: #db5a5a;
   visibility: visible;
-  color: #e74c3c;
+}
+
+.form-control i {
+  position: absolute;
+  top: 33px;
+  right: 10px;
+  visibility: hidden;
 }
