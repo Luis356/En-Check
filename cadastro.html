@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/cad.css" />
+    <link rel="shortcut icon" href="./imagens/logo-pw.png" />
   </head>
 
   <body>
@@ -14,7 +15,7 @@
       <ul class="menu-top-lista">
         <span>
           <li class="items-menu-top" id="item-home">
-            <a class="top-link" href="inicial.html">HOME</a>
+            <a class="top-link" href="inicial.html">EN-CHECK</a>
           </li>
         </span>
 
@@ -28,77 +29,56 @@
 
     <div class="container-cadastro">
       <div class="container-esquerda">
-        <div class="container-e-control">
-          <img src="imagens/logo-pw.png" alt="En-check" class="logo-cadastro" />
-          <h1 class="texto-logo">En-Check</h1>
-        </div>
+        <img src="imagens/logo-pw.png" alt="En-check" class="logo-cadastro" />
       </div>
 
       <div class="container-direita">
-        <div class="header"><h1>Cadastre-se-header</h1></div>
-        <form action="cad.php" method="post">
-          <div class="form-control">
-            <label for="nome">Nome</label>
-            <input
-              type="text"
-              name="nome"
-              id="nome"
-              placeholder="Digite Seu Nome Completo"
-            />
-          </div>
+        <div class="container-direita-formulario">
+          <div class="header"><h1>Crie sua conta</h1></div>
+          <form action="cad.php" method="post" class="formulario">
+            <div class="form-control">
+              <label for="nome">Nome</label>
+              <input
+                type="text"
+                name="nome"
+                id="nome"
+                placeholder="Digite Seu Nome Completo"
+              />
+            </div>
 
-          <div class="form-control">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Digite Seu Email"
-            />
-          </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Digite Seu Email"
+              />
+            </div>
 
-          <div class="form-control">
-            <label for="senha">Senha</label>
-            <input
-              type="password"
-              name="senha"
-              id="senha"
-              placeholder="Digite Sua Senha"
-            />
-          </div>
+            <div class="form-control">
+              <label for="senha">Senha</label>
+              <input
+                type="password"
+                name="senha"
+                id="senha"
+                placeholder="Digite Sua Senha"
+              />
+            </div>
 
-          <div class="form-control">
-            <label for="c_senha">Confirmar senha</label>
-            <input
-              type="password"
-              name="c_senha"
-              id="c_senha"
-              placeholder="Digite Sua Senha Novamente"
-            />
-          </div>
+            <div class="form-control">
+              <label for="cep">CEP</label>
+              <input
+                type="number"
+                name="cep"
+                id="cep"
+                placeholder="Digite Seu CEP"
+              />
+            </div>
 
-          <div class="form-control">
-            <label for="cep">CEP</label>
-            <input
-              type="number"
-              name="cep"
-              id="cep"
-              placeholder="Digite Seu CEP"
-            />
-          </div>
-
-          <div class="form-control">
-            <label for="ra">R.A</label>
-            <input
-              type="number"
-              name="ra"
-              id="ra"
-              placeholder="Digite Seu R.A"
-            />
-          </div>
-
-          <button>Cadastrar</button>
-        </form>
+            <button>Cadastrar</button>
+          </form>
+        </div>
       </div>
     </div>
   </body>

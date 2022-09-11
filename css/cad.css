@@ -1,20 +1,21 @@
 body {
   margin: 0;
-  background: linear-gradient(0deg, #2f1d3c 1%, #000000 50%);
   width: 100vw;
+  background: linear-gradient(0deg, #020456 0%, #000000 90%);
   height: 100vh;
 }
 
 .container-cadastro {
-  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 25vh;
-  background-color: transparent;
+  margin-top: 7vh;
 }
+
+/*  ESQUERDA  */
+
 .container-esquerda {
-  width: 50vw;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,23 +23,28 @@ body {
 }
 
 .logo-cadastro {
-  height: 250px;
-  width: 250px;
+  height: 300px;
+  width: 300px;
+  filter: drop-shadow(4px 4px 7px white);
+  margin-bottom: 15px;
 }
 
 .texto-logo {
   color: white;
   text-align: center;
 }
-/*
+
+/*  DIREITA   */
+
 .container-direita {
-  width: 50vw;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
-}*/
-.container-direita {
+  width: 50%;
+}
+
+.container-direita-formulario {
   background-color: #1c1c1c;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -48,9 +54,45 @@ body {
   color: white;
   margin: 25px;
 }
+
 .header {
-  color: white;
-  margin-bottom: 10px;
+  background-color: #1c1c1c;
+  padding: 15px;
+}
+
+.formulario {
+  padding: 20px;
+}
+
+.form-control {
+  margin-bottom: 5px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  display: block;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px;
+}
+
+.formulario button {
+  background-color: #fc00ff;
+  border: 2px solid #000000;
+  color: #fff;
+  font-size: 14px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 5px;
 }
 
 input::-webkit-outer-spin-button,
@@ -58,6 +100,6 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
   /*
-      Remove as "setas" do input number, nos navegadores: Chrome, Safari, Edge, Opera.
-     */
+    Remove as "setas" do input number, nos navegadores: Chrome, Safari, Edge, Opera.
+    */
 }
