@@ -25,8 +25,32 @@ body {
 .logo-cadastro {
   height: 300px;
   width: 300px;
-  filter: drop-shadow(4px 4px 7px white);
+  /*filter: drop-shadow(4px 4px 7px white);*/
+  animation: mudaSombra 7s infinite;
   margin-bottom: 15px;
+}
+
+@keyframes mudaSombra {
+  0% {
+    filter: drop-shadow(4px 4px 7px white);
+  }
+/*
+  30% {
+    filter: drop-shadow(4px 4px 7px yellow);
+
+  }
+*/
+  50% {
+    filter: drop-shadow(4px 4px 7px yellow);
+  }
+
+  /*70% {
+    filter: drop-shadow(4px 4px 7px green);
+  }*/
+
+  100% {
+    filter: drop-shadow(4px 4px 7px white);
+  }
 }
 
 /*  DIREITA   */
@@ -99,6 +123,7 @@ input::-webkit-inner-spin-button {
     Remove as "setas" do input number, nos navegadores: Chrome, Safari, Edge, Opera.
     */
 }
+
 .form-control.success input {
   border: 3px solid #4eca64;
 }
