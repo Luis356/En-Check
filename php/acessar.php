@@ -10,7 +10,7 @@ if (strlen($login) == 0 || strlen($senha) == 0) {
 
 include("conexao.php");
 
-$sql = "SELECT * FROM dados WHERE email='$login' AND password='$senha'";
+$sql = "SELECT * FROM dados WHERE email='$login' AND senha='$senha'";
 $result = $con->query($sql);
 
 if ($result->num_rows == 1) {

@@ -4,7 +4,7 @@ $senha = $_COOKIE["senha"];
 
 include_once("conexao.php");
 
-$sql = "SELECT * FROM dados WHERE email = '$usuario'  AND  password = '$senha'";
+$sql = "SELECT * FROM dados WHERE email = '$usuario'  AND  senha = '$senha'";
 $result = $con->query($sql);
 
 if ($result->num_rows != 1) {

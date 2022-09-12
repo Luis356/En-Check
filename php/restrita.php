@@ -10,7 +10,7 @@ include_once("validarestrito.php");
   </head>
   <body>
     <h1>Pagina Restrira</h1>
-    <a href="inicial.html">Voltar</a>
+    <a href="../inicial.html">Voltar</a>
   </body>
 </html>
 
