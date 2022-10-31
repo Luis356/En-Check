@@ -29,7 +29,9 @@ if (strlen($email_cad) != 0 && strlen($senha_cad) != 0 && strlen($nome_cad) != 0
 
         header("Location: acessar.php?email=$email_cad&senha=$senha_cad");        
     }
+
 } else {
 
     header("Location: ../erro.html");
+    
 }
