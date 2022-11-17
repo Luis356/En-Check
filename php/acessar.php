@@ -1,7 +1,7 @@
 <?php
 
-@$login = trim($_GET["email"]); 
-@$senha = trim($_GET["senha"]);
+@$login = trim($_GET["email_login"]); 
+@$senha = trim($_GET["senha_login"]);
 
 if (strlen($login) == 0 || strlen($senha) == 0) {
     echo "erro - lenght";    
@@ -10,7 +10,7 @@ if (strlen($login) == 0 || strlen($senha) == 0) {
 
 include("conexao.php");
 
-$sql = "SELECT * FROM dados WHERE email='$login' AND senha='$senha'";
+$sql = "SELECT * FROM clientes WHERE email='$login' AND senha='$senha'";
 $result = $con->query($sql);
 
 if ($result->num_rows == 1) {
