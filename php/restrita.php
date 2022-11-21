@@ -28,6 +28,7 @@ include_once("validarestrito.php");
     </header>
     <main>
       <h1>Bem Vindo(a)!!!</h1>
+      <p>ir para jogo <a href="jogo.php">aqui</a></p>
     </main>
 </body>
 </html>

@@ -1,12 +1,29 @@
-body {
-  background-color: #b4bec9;
-}
 header {
-  background-color: #202022;
+  background-color: black;
 }
 
 header li {
   list-style: none;
+}
+
+.sub-header {
+  border-top: 1px solid gray;
+  padding: 0 35px;
+}
+
+.sub-lista {
+  display: flex;
+  justify-content: space-between;
+}
+
+a.link-lista {
+  text-decoration: none;
+  color: #cacaca;
+}
+
+a.link-lista:hover {
+  color: red;
+  text-shadow: 0px 0px 5px #ff0000;
 }
 
 .menu-top .link {
@@ -27,6 +44,7 @@ header li {
 #logo {
   font-size: 1.5rem;
   font-weight: bold;
+  color: red;
 }
 
 .menu-top .menu-lista {
@@ -40,7 +58,8 @@ header li {
 }
 
 .menu-top .menu-lista .itens-menu .link:hover {
-  color: #00bbc9;
+  color: red;
+  text-shadow: 0px 0px 5px #ff0000;
 }
 
 .menu-mobile {
@@ -81,7 +100,7 @@ header li {
     top: 70px;
     gap: 0;
     border-radius: 0 0 20px 20px;
-    background-color: #101026;
+    background-color: black;
     text-align: center;
     flex-direction: column;
     width: 100%;

@@ -1,5 +1,4 @@
 body {
-  font-family: "Open Sans", sans-serif;
   width: 100%;
 }
 
@@ -193,14 +192,14 @@ input:-webkit-autofill {
   border-bottom-left-radius: 0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  animation: slidein 1.3s;
+  animation: slidein 0.5s;
   /*MODIFIQUEI DE 3s PARA 1.3s*/
 
   z-index: 12;
 }
 
 .sign-up-js .conteudo::before {
-  animation: slideout 1.3s;
+  animation: slideout 0.5s;
   /*MODIFIQUEI DE 3s PARA 1.3s*/
 
   z-index: 12;
@@ -223,14 +222,14 @@ input:-webkit-autofill {
 .sign-in-js .primeiro-conteudo .segunda-coluna {
   z-index: -1;
   position: relative;
-  animation: deslocamentoEsq 1.3s;
+  animation: deslocamentoEsq 0.5s;
   /*MODIFIQUEI DE 3s PARA 1.3s*/
 }
 
 .sign-up-js .segundo-conteudo .segunda-coluna {
   position: relative;
   z-index: -1;
-  animation: deslocamentoDir 1.3s;
+  animation: deslocamentoDir 0.5s;
   /*MODIFIQUEI DE 3s PARA 1.3s*/
 }
 
@@ -264,8 +263,6 @@ input:-webkit-autofill {
 
   50% {
     left: 100px;
-    /* z-index: 12; NÃO HÁ NECESSIDADE*/
-    /* background-color: yellow;  Exemplo que dei no vídeo*/
   }
 
   to {

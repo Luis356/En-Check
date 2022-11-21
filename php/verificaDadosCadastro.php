@@ -9,7 +9,7 @@ $senha_cad = $_POST["senha_cadastro"];
 if (strlen($nome_cad) != 0 && strlen($usuario_cad) != 0 && strlen($email_cad) != 0 && strlen($senha_cad) != 0) {
 
     //  CONECTA AO BANCO DE DADOS
-    include("./conexao.php");
+    include("conexao.php");
 
     // CONSULTA SE TEM UM EMAIL IGUAL A O EMAIL DO TESTE
     $sql = mysqli_query($con, "SELECT * FROM clientes WHERE usuario = '{$usuario_cad}'");
@@ -19,7 +19,7 @@ if (strlen($nome_cad) != 0 && strlen($usuario_cad) != 0 && strlen($email_cad) !=
 
         // usuario invalido
 
-        header("Location: ../erro.html");
+        header("Location: ../erro404.html");
     } else {
 
         // usuario valido
@@ -31,6 +31,6 @@ if (strlen($nome_cad) != 0 && strlen($usuario_cad) != 0 && strlen($email_cad) !=
 
 } else {
 
-    header("Location: ../erro.html");
+    header("Location: ../erro404.html");
     
 }
