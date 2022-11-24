@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/principal.css" />
+    <link rel="stylesheet" href="../css/menuResponsivo.css" />
+    <link rel="stylesheet" href="../css/recupera.css" />
+    <title>Recuperar Senha</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="menu-top">
+        <a href="index.php" class="link" id="logo">En-Check</a>
+
+        <ul class="menu-lista">
+          <li class="itens-menu" id="item-home">
+            <a class="link" href="sobre.html">SOBRE</a>
+          </li>
+          <li class="itens-menu" id="item-home">
+            <a class="link" href="contato.html">CONTATO</a>
+          </li>
+          <li class="itens-menu" id="item-login">
+            <a class="link" href="entrar.html">ENTRAR</a>
+          </li>
+        </ul>
+        <div class="menu-mobile">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <!--FIM DO HEADER-->
+
+    <main>
+      <div class="conteudo">
+        <div class="sub-conteudo">
+          <h1 class="titulo">Recupere sua senha</h1>
+          <div class="form">
+            <form action="../php/verificaEmail.php" method="get">
+              <label for="email_recupera">Digite seu email:</label>
+              <input
+                type="text"
+                name="email_recupera"
+                id="email_recupera"
+                placeholder="Digite seu email"
+              />
+              <input class="btn-enviar" type="submit" value="Enviar" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

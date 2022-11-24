@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/entrar.css" />
+    <link rel="stylesheet" href="../css/menuNaoResponsivo.css" />
+    <link rel="stylesheet" href="../css/principal.css" />
+    <link rel="shortcut icon" href="../imagens/entrar.jpeg" />
+    <title>Entrar</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="menu-top">
+        <a href="../php/index.php" class="link" id="logo">En-Check</a>
+
+        <ul class="menu-lista">
+          <li class="itens-menu" id="item-home">
+            <a class="link" href="sobre.html">SOBRE</a>
+          </li>
+          <li class="itens-menu" id="item-home">
+            <a class="link" href="contato.html">CONTATO</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="conteudo primeiro-conteudo">
+          <div class="primeira-coluna">
+            <button id="signin" class="botao primeiro-botao">Login</button>
+          </div>
+
+          <div class="segunda-coluna">
+            <h2 class="titulo segundo-titulo">Cadastre-se</h2>
+
+            <!--  FORMULARIO  -   CADASTRO  -->
+            <form class="form" action="../php/cadastro.php" method="post">
+              <label class="label-input" for="">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  id="nome_cadastro"
+                  name="nome_cadastro"
+                />
+              </label>
+
+              <label class="label-input" for="">
+                <input
+                  type="text"
+                  placeholder="Usuário"
+                  id="usuario_cadastro"
+                  name="usuario_cadastro"
+                />
+              </label>
+
+              <label class="label-input" for="">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  id="email_cadastro"
+                  name="email_cadastro"
+                />
+              </label>
+
+              <label class="label-input" for="">
+                <input
+                  type="password"
+                  placeholder="Password"
+                  id="senha_cadastro"
+                  name="senha_cadastro"
+                />
+              </label>
+
+              <button class="botao segundo-botao">Cadastro</button>
+            </form>
+          </div>
+
+          <!-- FIM SEGUNDA COLUNA -->
+        </div>
+        <!--FIM PRIMEIRO CONTEUDO/CADASTRO -->
+
+        <div class="conteudo segundo-conteudo">
+          <div class="primeira-coluna">
+            <button id="signup" class="botao primeiro-botao">
+              Cadastre-se
+            </button>
+          </div>
+          <div class="segunda-coluna">
+            <h2 class="titulo segundo-titulo">Faça seu login</h2>
+            <form class="form" action="../php/login.php" method="get">
+              <label class="label-input" for="">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  id="email"
+                  name="email"
+                />
+              </label>
+
+              <label class="label-input" for="">
+                <input
+                  type="password"
+                  placeholder="Password"
+                  id="senha"
+                  name="senha"
+                />
+              </label>
+
+              <a class="password" href="recupera.html">Esqueceu sua senha?</a>
+              <button class="botao segundo-botao">Entrar</button>
+            </form>
+          </div>
+          <!--  SEGUNDA COLUNA -->
+        </div>
+        <!-- SEGUNDO CONTEUDO -->
+      </div>
+    </main>
+    <script src="../scripts/app.js"></script>
+  </body>
+</html>
