@@ -17,8 +17,9 @@ a.link-lista:hover {
 }
 
 .menu-top .link {
-  color: #cacaca;
   text-decoration: none;
+  color: red;
+  text-shadow: 0px 0px 10px red;
   font-weight: bold;
 }
 

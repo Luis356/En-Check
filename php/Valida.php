@@ -8,6 +8,6 @@ $sql = mysqli_query($con, "SELECT * FROM clientes WHERE email = '$cookie_usuario
 
 if ($sql->num_rows != 1) {
 
-    header("Location: Erro.php");
-    exit(0);
+    header("Location: ../html/entrar.html");
+    exit();
 }

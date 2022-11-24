@@ -1,5 +1,6 @@
 <?php
-//Base de dados:teste
+//banco de dados: encheck
+//tabelas: Clientes e Palavras
 
 $server_bd = "localhost";
 $login_bd = "root";

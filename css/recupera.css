@@ -1,0 +1,58 @@
+body {
+  background-color: #404040;
+}
+.conteudo {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulo {
+  color: red;
+  padding: 30px;
+  text-shadow: 0px 0px 15px #ff0000;
+}
+
+#email_recupera {
+  height: 45px;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background-color: #ecf0f1;
+}
+
+.sub-conteudo {
+  background-color: black;
+  border-radius: 20px;
+  text-align: center;
+  width: 500px;
+  height: 350px;
+}
+.form {
+  width: 500px;
+  height: 190px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.form form {
+  display: grid;
+  text-align: initial;
+  gap: 15px;
+}
+
+.btn-enviar {
+  border-radius: 15px;
+  text-transform: uppercase;
+  color: red;
+  font-size: 10px;
+  padding: 15px 50px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  align-self: center;
+  border: none;
+  margin-top: 1rem;
+}

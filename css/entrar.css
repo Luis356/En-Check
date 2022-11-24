@@ -7,7 +7,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #737373;
+  background-color: #404040;
 }
 
 .conteudo {
@@ -23,7 +23,7 @@ body {
 .conteudo::before {
   content: "";
   position: absolute;
-  background-color: #404040;
+  background-color: black;
   width: 40%;
   height: 100%;
   border-top-left-radius: 15px;
@@ -42,7 +42,7 @@ body {
 }
 
 .segundo-titulo {
-  color: #404040;
+  color: red;
 }
 
 .description {
